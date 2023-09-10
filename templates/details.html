@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Kanit:wght@200&family=Nunito+Sans:opsz,wght@6..12,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='details.css')}}">
+    <title>Details</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Account Details</h1>
+    <div class="container">
+      <div class="image-container">
+        <img src="{{profile_picture}}" alt="somethingwentwrong">
+      </div>
+       <div class="text-container">
+        <h4>First Name - {{first_name}}</h4>
+        <h4>Middle Name - {{last_name}}</h4>
+        <h4>Roll Number - {{roll_no}}</h4>
+        <h4>Father Name - {{father_name}}</h4>
+        <h4>Mother Name - {{mother_name}}</h4>
+        <h4>Email - {{email}}</h4>
+        <h4>Contact - {{mobile}}</h4>
+        <!-- <h4>College Branch - {{college_branch}}</h4> -->
+        <!-- <h4>Student Batch - {{batch}}</h4> -->
+        <h4>Date of birth - {{DOB}}</h4>
+        <h4>Current HOD - {{HOD}}</h4>
+      </div>
+    </div>
+
+    <form class="get-marks" action="marksheet" method="post">
+      <input type="submit" class="wrapper" name="marks" value="Get Marksheet">
+    </form>
+
+    <!-- {{html_table | safe}} -->
+</body>
+</html>
