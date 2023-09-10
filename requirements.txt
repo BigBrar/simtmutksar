@@ -3,3 +3,4 @@ requests
 bs4
 CacheControl
 gunicorn==19.7.1
+filelock
