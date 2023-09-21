@@ -22,26 +22,26 @@ class mrsptu_details:
         self.get_payment_history = 'https://www.mrsstuexam.com/Home.aspx?ReturnUrl=%2fStudent%2fFeeVerfiiedStatus.aspx'
 
 
-    def get_marks(self):
-        self.response = self.session.post(self.marks_url,data=self.data,headers=self.headers,allow_redirects=True)
-        print(self.response)
-        print(self.response.headers)
-        table_html = self.get_marks_table()
-        student_details = self.get_student_profile()
-        print('Table html - ',table_html)
-        return table_html+student_details
-
     def get_marks_table(self):
         response = self.session.post(self.marks_url,headers=self.headers,data=self.data)
         student_details = ''
         soup = bs(response.content,'html.parser')
         student_details = soup.find('table',{'id':'ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult'})#marksheet
+        mark_percentage = 0
+        print("Nothing happens")
+        mark_percentage+=int(str(student_details).split('ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblExtMark')[1].split('>')[1].split('<')[0])
+        mark_percentage+=int(str(student_details).split('ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblExtMark')[1].split('>')[1].split('<')[0])
+        mark_percentage+=int(str(student_details).split('ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblExtMark')[1].split('>')[1].split('<')[0])
+        mark_percentage+=int(str(student_details).split('ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblExtMark')[1].split('>')[1].split('<')[0])
+        mark_percentage+=int(str(student_details).split('ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblExtMark')[1].split('>')[1].split('<')[0])
+        mark_percentage/=300
+        mark_percentage*=100
         # student_details.append(soup.find('span',{'id':'ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblStudent'}).text)#student name
         # student_details.append(soup.find('span',{'id':'ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblRollNumber'}).text)#student's roll number
         # student_details.append(soup.find('span',{'id':'ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblCollege'}).text)#student's college name
         # student_details.append(soup.fi/nd('span',{'id':'ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblBranch'}).text)#student's college branch
         # student_details.append(soup.find('span',{'id':'ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblBatch'}).text)#student's batch(year of admission)
-        return student_details
+        return [student_details,mark_percentage]
 
     def get_student_profile(self):
         response = self.session.post(self.profile_url,data=self.data)

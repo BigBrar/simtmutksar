@@ -2,6 +2,7 @@
 body{
     margin: 10px;
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #DDD0C8;
 }
 
 .wrapper{
@@ -11,7 +12,7 @@ body{
   color:black;
   background-color:white;
   border-color:black;
-  border-radius:5px;
+  border-radius:10%;
   transition:all 1s;}
 
 .wrapper:hover{
@@ -62,7 +63,7 @@ body{
 }
 
 .grid_main th, .grid_main td {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #3f3636;
   text-align: center;
   padding: 12px;
   font-size: 15px;
@@ -100,11 +101,16 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+
 /* Define styles for different grade levels */
 
 /* Add a responsive horizontal scroll for small screens */
 @media screen and (max-width: 600px) {
   .grid_main {
     overflow-x: auto;
+  }
+  img{
+    margin: 0px;
   }
 }

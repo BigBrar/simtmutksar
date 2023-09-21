@@ -27,12 +27,10 @@ def student_details():
 def marksheet_redirecter():
     global id
     global password
-    if request.method == 'POST':
-        print(id," v ",password)
-        object = send_input.mrsptu_details(id,password)
-        html_table = object.get_marks_table()
-        return render_template('show_result.html',marksheet=html_table)
-    return "You are not supposed to be here"
+    print(id," v ",password)
+    object = send_input.mrsptu_details(id,password)
+    html_table = object.get_marks_table()
+    return render_template('show_result.html',marksheet=html_table[0],percentage=html_table[1])
 
 if __name__ == "__main__":
-    app.run(debug=False,host='0.0.0.0')
+    app.run(debug=True,host='0.0.0.0')
