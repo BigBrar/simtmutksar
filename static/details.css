@@ -5,6 +5,60 @@ body{
     background-color: #DDD0C8;
 }
 
+.input-field{
+  width: 100px;
+  margin-top: 8px; 
+  height: 40px; 
+  border-color: black; 
+  border-radius: 10%; 
+  border: 10px; 
+  transition: 0.4s;
+}
+
+.input-field:hover{
+  background-color: rgb(90, 201, 90);
+}
+
+/* Center the select box */
+.select-container {
+  text-align: center;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 700;
+  display: block; /* Ensure label takes full width */
+  margin-bottom: 10px; /* Add spacing between label and select */
+}
+
+select {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  width: 100%;
+  max-width: 300px; /* Set a maximum width to prevent it from covering the whole page */
+  margin: 0 auto; /* Center the select box horizontally */
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Style the hover and focus state of the select */
+select:hover,
+select:focus {
+  border-color: #007BFF;
+  background-color: #fff;
+  outline: none;
+}
+
+
+
 .wrapper{
   height: 45px;
   text-align:center;
@@ -30,7 +84,7 @@ body{
 
 .image-container {
   flex: 1; /* Take up one-third of the available space */
-  /* padding: 20px; /* Add spacing around the image */ */
+  /* padding: 20px; /* Add spacing around the image */
 }
 
 .image-container img {
