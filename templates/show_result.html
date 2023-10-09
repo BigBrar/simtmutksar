@@ -11,8 +11,20 @@
 </head>
 <body>
     <h1 style="text-align: center;">Latest Result</h1>
+    <div class="select-container">
+        <form id="myForm" method="POST" action="/marksheet" >
+        <label for="selectBox">Select an Option:</label>
+        <select id="selectBox" name="marksheet">
+            <!-- <option disabled value="Nothing">select year</option> -->
+            <option disabled value="nothing">select year</option>
+            <option value="16">May 2023</option>
+            <option value="15">Dec 2022</option>
+        </select><br>
+        <input class="input-field" style="width: 100px; margin-top: 8px; height: 40px; border-color: black; border-radius: 10%; border: 10px; transition: 0.4s; " type="submit" value="Get marksheet"></form>
+    </div>
 
-    {{marksheet | safe}}
+    <div style="text-align: center; margin-top: 20px;">{{marksheet | safe}}</div>
     <h3 style="text-align:center;">Percentage - {{percentage}}%</h3>
+
 </body>
 </html>

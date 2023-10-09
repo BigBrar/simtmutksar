@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
-    <!-- <img src="{{url_for('static', filename='SIMT.jpg')}}" align="middle" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <title>Login Mrsptu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        #h1 {
+            color: #333;
+        }
+
+        .input_field {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .radio_selection {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        #search {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <br><br><br><h1 id="h1">Login</h1>
-    <form action="/details" method="POST">
-        <input type="text" name="id" placeholder="ID"><br>
-        <input type="password" name="password" placeholder="PASSWORD"><br>
-        <input id="search" type="submit">
-    </form><br><br>
+    <form action="/" method="POST">
+        <h1 id="h1">Login</h1>
+        <input type="text" class="input_field" name="id" placeholder="ID"><br>
+        <input type="password" class="input_field" name="password" placeholder="PASSWORD"><br>
+        <!-- <div class="radio_selection"> -->
+            <!-- <input type="radio" name="page_selection" value="details" id="profile"> -->
+            <!-- <label for="profile">Profile</label><br> -->
+            <!-- <input type="radio" name="page_selection" value="marksheet" id="marksheet"> -->
+            <!-- <label for="marksheet">Marksheet</label><br> -->
+        <!-- </div> -->
+        <input id="search" type="submit" class="input_field" value="Login">
+    </form>
 </body>
+
 </html>
