@@ -1,0 +1,170 @@
+
+body{
+    margin: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #DDD0C8;
+}
+
+.input-field{
+  width: 100px;
+  margin-top: 8px; 
+  height: 40px; 
+  border-color: black; 
+  border-radius: 10%; 
+  border: 10px; 
+  transition: 0.4s;
+}
+
+.input-field:hover{
+  background-color: rgb(90, 201, 90);
+}
+
+/* Center the select box */
+.select-container {
+  text-align: center;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 700;
+  display: block; /* Ensure label takes full width */
+  margin-bottom: 10px; /* Add spacing between label and select */
+}
+
+select {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  width: 100%;
+  max-width: 300px; /* Set a maximum width to prevent it from covering the whole page */
+  margin: 0 auto; /* Center the select box horizontally */
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Style the hover and focus state of the select */
+select:hover,
+select:focus {
+  border-color: #007BFF;
+  background-color: #fff;
+  outline: none;
+}
+
+
+
+.wrapper{
+  height: 45px;
+  text-align:center;
+  width:120px;
+  color:black;
+  background-color:white;
+  border-color:black;
+  border-radius:10%;
+  transition:all 1s;}
+
+.wrapper:hover{
+       color:white;
+       font:Arial;
+       background-color:#2b2727;
+       border-color:#2bada0;
+       border-radius:5px;
+   }
+
+.container {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+.image-container {
+  flex: 1; /* Take up one-third of the available space */
+  /* padding: 20px; /* Add spacing around the image */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto;
+  width: auto;
+  margin-left: 100px;
+  display: block; /* Remove any extra spacing below the image */
+}
+
+.text-container {
+  flex: 2; /* Take up two-thirds of the available space */
+  /* text-align: center; /* Center-align the text within this container */
+  /* margin-right:300px; */
+  /* padding: 20px; /* Add spacing around the text */
+}
+
+.text-container h4 {
+  text-align: left;
+  margin-left: 80px;  /* Remove default margin for <h4> tags */
+  padding: 10px; /* Add spacing between each <h4> tag */
+}
+
+
+/* Apply a border to the table cells and align text to center */
+.grid_main {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Nunito Sans', cursive;
+}
+
+.grid_main th, .grid_main td {
+  border: 1px solid #3f3636;
+  text-align: center;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* Style table header row */
+.grid_hearder {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style alternating rows */
+.grid_alterrow {
+  background-color: #f5f5f5;
+}
+
+/* Add some spacing between cells */
+.grid_main th, .grid_main td {
+  padding: 12px;
+}
+
+/* Add hover effect to rows */
+.grid_main tr:hover {
+  background-color: #ddd;
+  transition: background-color 0.2s;
+}
+
+/* Center align the header text */
+.grid_main th {
+  text-align: center;
+}
+
+/* Add a subtle box shadow to the table */
+.grid_main {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Define styles for different grade levels */
+
+/* Add a responsive horizontal scroll for small screens */
+@media screen and (max-width: 600px) {
+  .grid_main {
+    overflow-x: auto;
+  }
+  img{
+    margin: 0px;
+  }
+}
