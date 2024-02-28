@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <!-- <img src="{{url_for('static', filename='SIMT.jpg')}}" align="middle" /> -->
+    <title>Home</title>
+    <style>
+        body{
+            background-color: #673896;
+            background-image: none !important;
+        }
+    </style>
+</head>
+<body>
+    <a style="text-align: right; margin-right: 100%;" href="/logout"><button style="color: black; font-size: larger; font-family: 'Courier New', Courier, monospace; background-color: rgb(139, 55, 55); border: 10px; border-color: rgb(189, 189, 81); border-radius: 5%; ">Logout</button> </a>
+    <br><br><br><h1 id="h1" style="color: black;">You are logged in as - </h1>
+    <h1 id="h1" style="color: rgb(123, 204, 123);">{{id}}</h1>
+    <h2 id="h1">Now select what you would like to access...</h2>
+    <form action="/details" method="POST">
+        <input style="border-color: black; border-radius: 10%; height: 50px;" class="search" type="submit" value="Profile">
+    </form><br><br>
+
+    <form action="/marksheet", method="POST">
+        <input style="border-color: black; border-radius: 10%; height: 50px;" type="submit" class="search" value="Marksheet">
+    </form>
+</body>
+</html>

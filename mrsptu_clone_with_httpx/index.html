@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head"><link href="http://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Product+Sans:400&amp;lang=pa" rel="stylesheet" /><link href="https://mrsstuexam.com/main.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" /><link href="../App_Themes/Theme4/font-awesome.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Theme4/font-awesome.min.css" type="text/css" rel="stylesheet" /><title>
+	Student - View Result
+</title></head>
+<body class="body_bg">
+    <form name="aspnetForm" method="post" action="viewResult.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="44D45452" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEwLplKonAt+3uNoLAvKGicoMAvKGlcoMAvKGkcoMAvKGncoMAvKGmcoMAvKGpcoMAvKGocoMAvKGrcoMAuqG7ckMAuWG7ckMAvSG7ckMAveG7ckMAvaG7ckMAvGG7ckMAvCG7ckMAvOG7ckMAvKG7ckMLYnv8G7PRKiEvZI5cr3n+qRG7iM=" />
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="main_bg">
+            <tr>
+                <td align="center">
+                    <table width="1024px" border="0" cellpadding="0" cellspacing="0" class="main_inner"
+                        style="">
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="1024px" style="display: block">
+                                    <tbody>
+                                        <tr style="" valign="middle">
+                                            <td style="width: 130px;">
+                                                <img src="https://mrsstuexam.com/Images/mrsptulogo.png" height="120" width="120">
+                                            </td>
+                                            <td align="left" style="padding: 5px;">
+                                                <h1 class="headerText" style="font-size: 25px; font-weight: 800; word-spacing: 5px; margin: 0px; padding: 0px;">ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਪੰਜਾਬ ਟੈਕਨੀਕਲ ਯੂਨੀਵਰਸਿਟੀ, ਬਠਿੰਡਾ (ਪੰਜਾਬ)</h1>
+                                                <h1 class="headerText" style="font-size: 30px; font-weight: 400; word-spacing: 5px; font-variant: small-caps; margin: 0px; padding: 0px;">Maharaja Ranjit Singh Punjab Technical University</h1>
+                                                <h4 class="headerText" style="font-size: 15px; font-weight: bold; word-spacing: 5px; margin: 0px; padding: 0px; color: #8A8A8A;">BATHINDA (PUNJAB)</h4>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='cssmenu'>
+                                <ul>
+                                    <li class='active'><a href="https://www.mrsstuexam.com/Student/Default.aspx">Home</a></li>
+                                    <li><a href="https://www.mrsstuexam.com/Student/Default.aspx">Announcement(s)</a></li>
+                                    <li><a href="https://www.mrsstuexam.com/Student/studentinfo.aspx">Update Student info</a></li>
+                                    <li class='has-sub'><a href="https://www.mrsstuexam.com/Student/Default.aspx">Examination</a>
+                                        <ul>
+										<li><a href="https://www.mrsstuexam.com/Student/FeeVerfiiedStatus.aspx">View Payment History</a></li>
+                                            
+                                            <li><a href="https://www.mrsstuexam.com/Student/viewResult.aspx">View Result</a></li>
+                                            <li><a href="https://www.mrsstuexam.com/Student/Examfromlist.aspx">Exam Link</a></li>
+                                             <li><a href="https://www.mrsstuexam.com/Student/Regular.aspx">Regular</a></li>
+                                            <li><a href="https://www.mrsstuexam.com/Student/Reappear.aspx">Reappear</a></li>
+                                            <li><a href="https://www.mrsstuexam.com/Student/AdmitCard.aspx">AdmitCard</a></li>
+                                           
+                                            <li><a href="https://www.mrsstuexam.com/Student/DocumentRequest.aspx">Document Request</a></li>
+                                             <li><a href="https://www.mrsstuexam.com/Student/Issueddocument.aspx">Issued Documents</a></li>
+                                            <li><a href="https://www.mrsstuexam.com/Student/AllRequest.aspx">View Request History</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href="https://www.mrsstuexam.com/Student/Default.aspx">Accounts</a>
+                                        <ul>
+                                            <li><a href="https://www.mrsstuexam.com/Student/ReceiptListing.aspx">Receipt Listing</a></li>
+										 <li><a href="https://www.mrsstuexam.com/Student/Receipts.aspx"> All Receipts</a></li>
+					                        
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href="https://www.mrsstuexam.com/Student/default.aspx">My Account</a>
+                                        <ul>
+                                            <li><a href="https://www.mrsstuexam.com/Student/Profile.aspx">My Profile</a></li>
+                                            <li><a href="https://www.mrsstuexam.com/Student/ChangePassword.aspx">Change Password</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a id="ctl00_lnkbtnLogout" href="javascript:__doPostBack('ctl00$lnkbtnLogout','')">Log Out</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <span style="color: lightblue; font-weight: bold">Welcome:</span>
+                                <span id="ctl00_lblName"><b><font color="LightBlue">Deepinder Singh </font></b></span>
+                                &nbsp;&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 450px;" valign="top" class="main_content">
+                                
+
+    <div id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_pnlExamSession">
+	
+    <style type="text/css">
+        .style1 {
+            width: 310px;
+        }
+    </style>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <h3>&nbsp;Student Result</h3>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                
+                
+            </td>
+        </tr>
+        <tr align="center">
+            <td>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <table class="inputform_main" cellpadding="3" cellspacing="0" width="500px">
+                    <tr class="inputform_alterrow" align="center">
+                        <td align="left" style="width: 200px">*Select Exam Session</td>
+                        <td align="left" class="style1">
+                            <select name="ctl00$ContentPlaceHolder1$ctrlStudentResult1$ddlExamSession" id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_ddlExamSession">
+		<option value="17">Dec 2023</option>
+		<option value="16">May 2023</option>
+		<option selected="selected" value="15">Dec 2022</option>
+		<option value="14">June 2022</option>
+		<option value="13">DEC 2021</option>
+		<option value="12">June 2021</option>
+		<option value="11">Dec 2020</option>
+		<option value="10">June 2020</option>
+		<option value="9">Dec 2019</option>
+		<option value="8">May 2019</option>
+		<option value="7">NOV 2018</option>
+		<option value="6">MAY 2018</option>
+		<option value="5">DEC 2017</option>
+		<option value="4">MAY 2017</option>
+		<option value="3">DEC 2016</option>
+		<option value="2">MAY 2016</option>
+		<option value="1">DEC 2015</option>
+
+	</select>
+                        </td>
+                        <td align="left" style="width: 100px">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<div id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_Pnlform">
+	
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+        
+        <tr align="center">
+            <td>&nbsp;
+            </td>
+        </tr>
+        <tr id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_trStudentInfo" align="center">
+		<td>
+                <table class="inputform_main" cellpadding="3" cellspacing="0" width="500px">
+                    <tr class="inputform_alterrow" align="center">
+                        <td align="left" style="width: 200px">*Student</td>
+                        <td align="left" style="width: 200px">
+                            <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblStudent" style="display:inline-block;">Deepinder Singh </span></td>
+                        <td align="left" style="width: 100px">&nbsp;</td>
+                    </tr>
+                    <tr class="inputform_row" align="center">
+                        <td align="left" style="width: 200px">*Roll Number</td>
+                        <td align="left" style="width: 200px">
+                            <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblRollNumber" style="display:inline-block;">220540673</span></td>
+                        <td align="left" style="width: 100px">&nbsp;</td>
+                    </tr>
+                    <tr class="inputform_alterrow" align="center">
+                        <td align="left" style="width: 200px">*College</td>
+                        <td align="left" style="width: 200px">
+                            <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblCollege" style="display:inline-block;">212 Sainik Institute of Management & Technology</span></td>
+                        <td align="left" style="width: 100px">&nbsp;</td>
+                    </tr>
+                    <tr class="inputform_row" align="center">
+                        <td align="left" style="width: 200px">*Branch</td>
+                        <td align="left" style="width: 200px">
+                            <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblBranch" style="display:inline-block;">1304 Information Technology</span></td>
+                        <td align="left" style="width: 100px">&nbsp;</td>
+                    </tr>
+                    <tr class="inputform_alterrow" align="center">
+                        <td align="left" style="width: 200px">*Batch</td>
+                        <td align="left" style="width: 200px">
+                            <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_lblBatch" style="display:inline-block;">2022</span></td>
+                        <td align="left" style="width: 100px">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+	</tr>
+	
+        <tr align="center">
+            <td>&nbsp;
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <div>
+		<table class="grid_main" cellspacing="0" cellpadding="3" rules="all" border="1" id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult" width="900">
+			<tr class="grid_hearder">
+				<th scope="col" width="100">Sem (Type)</th><th scope="col" width="100">SubjectCode</th><th scope="col" width="200">Subject Name</th><th scope="col" width="100">Subject Type</th><th scope="col" width="50">IM</th><th scope="col" width="50">EM</th><th scope="col" width="60">Grade / Result</th>
+			</tr><tr class="grid_row">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblSubjectCode">BHUM0101</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblName">Communicative Skills-I</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblSubjectType">Theory</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblIntMark">31</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl02_lblExtMark">33</span>
+                            </td><td align="center" width="100">
+				      B   
+                            </td>
+			</tr><tr class="grid_alterrow">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblSubjectCode">BHUM0103</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblName">Human Values & Professional Ethics</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblSubjectType">Theory</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblIntMark">30</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl03_lblExtMark">33</span>
+                            </td><td align="center" width="100">
+				      B   
+                            </td>
+			</tr><tr class="grid_row">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblSubjectCode">BITE1101</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblName">Trends in Information Technology</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblSubjectType">Theory</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblIntMark">32</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl04_lblExtMark">30</span>
+                            </td><td align="center" width="100">
+				      B   
+                            </td>
+			</tr><tr class="grid_alterrow">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblSubjectCode">BITE1102</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblName">Developing Programming Logic & Techniques</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblSubjectType">Theory</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblIntMark">32</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl05_lblExtMark">34</span>
+                            </td><td align="center" width="100">
+				      B   
+                            </td>
+			</tr><tr class="grid_row">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblSubjectCode">BMAT0105</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblName"> Mathematics-I</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblSubjectType">Theory</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblIntMark">31</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl06_lblExtMark">17</span>
+                            </td><td align="center" width="100">
+				      D   
+                            </td>
+			</tr><tr class="grid_alterrow">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl07_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl07_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl07_lblSubjectCode">BHUM0102</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl07_lblName">Communicative Skill Lab-I</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl07_lblSubjectType">Practical</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl07_lblIntMark">41</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl07_lblExtMark">32</span>
+                            </td><td align="center" width="100">
+				      B+   
+                            </td>
+			</tr><tr class="grid_row">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl08_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl08_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl08_lblSubjectCode">BITE1103</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl08_lblName">Information Technology Lab</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl08_lblSubjectType">Practical</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl08_lblIntMark">41</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl08_lblExtMark">32</span>
+                            </td><td align="center" width="100">
+				      B+   
+                            </td>
+			</tr><tr class="grid_alterrow">
+				<td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl09_lblSemester">1st</span>
+				<span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl09_lblResulttype">  (RG)</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl09_lblSubjectCode">BITE1104</span>
+                            </td><td align="left" width="200">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl09_lblName">Programming Logic Lab</span>
+                            </td><td align="center" width="100">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl09_lblSubjectType">Practical</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl09_lblIntMark">41</span>
+                            </td><td align="center" width="50">
+                                <span id="ctl00_ContentPlaceHolder1_ctrlStudentResult1_grdStudentResult_ctl09_lblExtMark">32</span>
+                            </td><td align="center" width="100">
+				      B+   
+                            </td>
+			</tr>
+		</table>
+	</div>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="left" style="padding-left: 60px">
+                <b>Notes:<br />
+                    The result is provisional and is to  be verified  with official notification.<br />
+                    IM means internal marks.<br />
+                    EM means external marks.<br />
+                </b>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="footer_border">
+                <td></td>
+            </tr>
+            <tr valign="middle" class="footer_bg">
+                <td align="center" class="footer_td" style="padding: 5px;">MAHARAJA RANJIT SINGH PUNJAB TECHNICAL UNIVERSITY - Bathinda (Punjab) - 151001<br />
+                    Copyright © 2018. All Rights Reserved
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script language="javascript" type="text/javascript">
+        var sessionTimeoutWarning = '1';
+        var sessionTimeout = '35';
+        var sTimeout = (parseInt(sessionTimeout) - parseInt(sessionTimeoutWarning)) * 60 * 1000;
+        setTimeout('SessionWarning()', sTimeout);
+
+        function SessionWarning() {
+            var message = "Your session will expire in another " + sessionTimeoutWarning + " mins! Please Save the data before the session expires";
+            alert(message);
+        }
+    </script>
+
+</body>
+</html>

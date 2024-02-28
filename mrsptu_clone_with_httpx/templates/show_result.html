@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Kanit:wght@200&family=Nunito+Sans:opsz,wght@6..12,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='details.css')}}">
+    <title>Details</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Latest Result</h1>
+    <div class="select-container">
+        <form id="myForm" method="POST" action="/marksheet" >
+        <label for="selectBox">Select an Option:</label>
+        <select id="selectBox" name="marksheet">
+            <!-- <option disabled value="Nothing">select year</option> -->
+            <option disabled value="nothing">select year</option>
+            <option value="16">May 2023</option>
+            <option value="15">Dec 2022</option>
+        </select><br>
+        <input class="input-field" style="width: 100px; margin-top: 8px; height: 40px; border-color: black; border-radius: 10%; border: 10px; transition: 0.4s; " type="submit" value="Get marksheet"></form>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">{{marksheet | safe}}</div>
+    <h3 style="text-align:center;">Percentage - {{percentage}}%</h3>
+
+</body>
+</html>
