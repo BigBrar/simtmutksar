@@ -1,6 +1,6 @@
 # CampusCore: Academic Portal Solution 🎓
 
-A robust internal network solution that started as a simple fix for SSL issues and evolved into the primary academic portal for my college. Now serving hundreds of daily users including students, professors, and staff.
+A robust internal network solution that started as a simple fix for SSL issues and evolved into the primary academic portal for my college. Now serving various daily users including students, professors, and staff.
 
 ## Why This Exists 🤔
 Our college website was constantly going down due to SSL issues and unreliable hosting. Modern browsers would block access, marking it as unsafe. Instead of watching everyone struggle, I decided to build something that would actually work.
@@ -59,10 +59,10 @@ Our college website was constantly going down due to SSL issues and unreliable h
 
 ## Current Status 📊
 - Being used by entire college
-- Handles hundreds of daily queries
-- Nearly 100% uptime
+- Close to 100% uptime
 - Lightning fast responses
 - Trusted by staff and students
+- Have not commited every version to github
 
 ## Learning Outcomes 📚
 - Network protocol analysis
@@ -72,16 +72,4 @@ Our college website was constantly going down due to SSL issues and unreliable h
 - Performance optimization
 - Real-world problem solving
 
-## Future Plans 🔮
-- Adding more features
-- Performance monitoring
-- Enhanced security measures
-- Better data analytics
-- User feedback system
-
-## Local Setup
-[Setup instructions coming soon]
-
 ---
-
-*Note: This is an educational project created to solve real-world problems at my college. Feel free to learn from it, but remember every institution has different needs and security requirements.*
