@@ -1,4 +1,4 @@
-# CampusCore: Academic Portal Solution 🎓
+# CollegeCore: Academic Portal Solution 🎓
 
 A robust internal network solution that started as a simple fix for SSL issues and evolved into the primary academic portal for my college. Now serving various daily users including students, professors, and staff.
 
